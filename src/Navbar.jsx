@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { useContext } from "react";
+import { MovieContext } from "./MovieContext";
 
 function Navbar() {
-  return (
-    <div>Navbar</div>
-  )
+  const [movies, setMovies] = useContext(MovieContext);
+  return <div>Navbar</div>;
 }
 
-export default Navbar
+export default Navbar;
