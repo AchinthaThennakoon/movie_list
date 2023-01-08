@@ -1,9 +1,12 @@
 import './App.css';
+import MovieList from './MovieList';
+import Navbar from './Navbar';
 
 function App() {
   return (
     <div className="App">
-      <p>hello world</p>
+      <Navbar/>
+      <MovieList/>
     </div>
   );
 }
