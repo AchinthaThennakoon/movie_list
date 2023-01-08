@@ -1,10 +1,10 @@
-import React, { useState , createContext} from 'react'
+import React, { useState, createContext } from "react";
 
 //create context
 export const MovieContext = createContext();
 
-export const MovieProvider = () =>{
-  const [movies,setMovies] = useState([
+export const MovieProvider = () => {
+  const [movies, setMovies] = useState([
     {
       id: 1,
       name: "harry potter",
@@ -14,11 +14,11 @@ export const MovieProvider = () =>{
       name: "1899",
     },
   ]);
-  return(
+  return (
     //add componet which need movie context
     <MovieContext.Provider>
-      <Navbar/>
-      <MovieList/>
+      <Navbar />
+      <MovieList />
     </MovieContext.Provider>
   );
-}
+};
