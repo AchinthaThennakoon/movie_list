@@ -3,7 +3,7 @@ import React, { useState, createContext } from "react";
 //create context
 export const MovieContext = createContext();
 
-export const MovieProvider = () => {
+export const MovieProvider = (props) => {
   const [movies, setMovies] = useState([
     {
       id: 1,
@@ -17,8 +17,9 @@ export const MovieProvider = () => {
   return (
     //add componet which need movie context
     <MovieContext.Provider>
-      <Navbar />
-      <MovieList />
+      {/* <Navbar />
+      <MovieList /> */}
+      {props.children}
     </MovieContext.Provider>
   );
 };
