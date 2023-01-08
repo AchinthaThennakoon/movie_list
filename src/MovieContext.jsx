@@ -16,7 +16,7 @@ export const MovieProvider = (props) => {
   ]);
   return (
     //add componet which need movie context
-    <MovieContext.Provider>
+    <MovieContext.Provider value={movies}>
       {/* <Navbar />
       <MovieList /> */}
       {props.children}
