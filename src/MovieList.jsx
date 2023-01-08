@@ -4,9 +4,10 @@ import Movie from "./Movie";
 function MovieList() {
   return (
     <>
-      {movies.map((movie) => (
+      {/* {movies.map((movie) => (
         <Movie name={movie.name} id={movie.id} />
-      ))}
+      ))} */}
+      
     </>
   );
 }
