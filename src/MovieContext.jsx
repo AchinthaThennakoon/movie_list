@@ -14,5 +14,11 @@ export const MovieProvider = () =>{
       name: "1899",
     },
   ]);
-  return();
+  return(
+    //add componet which need movie context
+    <MovieContext.Provider>
+      <Navbar/>
+      <MovieList/>
+    </MovieContext.Provider>
+  );
 }
