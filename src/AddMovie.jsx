@@ -13,12 +13,17 @@ function AddMovie() {
   const updatePrice = (e) => {
     setPrice(e.target.value);
   };
+
+  const addMovie = (e) => {
+    e.preventdefault();
+    setMovies((prevMovies) => [...prevMovies, { name: name, price: price }]);
+  };
   return (
     <div>
       <form>
         <input type="text" name="name" value={name} onChange={updatename} />
         <input type="text" name="price" value={price} onChange={updatePrice} />
-        <button>Submit</button>
+        <button type="submit">Submit</button>
         {console.log(name)}
       </form>
     </div>
