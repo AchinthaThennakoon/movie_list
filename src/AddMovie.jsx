@@ -3,7 +3,7 @@ import { MovieContext } from "./MovieContext";
 
 function AddMovie() {
   const [name, setName] = useState("");
-  const [price, setprice] = useState("");
+  const [price, setPrice] = useState("");
 
   const [movies, setMovies] = useContext(MovieContext);
 
@@ -11,7 +11,7 @@ function AddMovie() {
     setName(e.target.value);
   };
   const updatePrice = (e) => {
-    setName(e.target.value);
+    setPrice(e.target.value);
   };
   return (
     <div>
